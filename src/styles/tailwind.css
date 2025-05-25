@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-purple: #6a0dad;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-pink: #cc2d74;
+    --color-gold: #ffcc22;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-purple {
+    background: linear-gradient(180deg, #6a0dad 0%, #000000 100%);
+  }
+  
+  .bg-gradient-purple-reverse {
+    background: linear-gradient(180deg, #000000 0%, #6a0dad 100%);
+  }
+  
+  .bg-gradient-purple-dark {
+    background: linear-gradient(180deg, #6a0dad 0%, #34243b 100%);
+  }
+  
+  .bg-gradient-pink-purple {
+    background: linear-gradient(180deg, #ad13ca 0%, #501a77 100%);
+  }
+}
