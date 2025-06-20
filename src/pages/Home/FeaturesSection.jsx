@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-gradient-purple text-white py-12">
+    <section className="bg-gradient-to-b from-[#fdc54c] to-[#f52d59] text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
           <div className="flex flex-col items-center">

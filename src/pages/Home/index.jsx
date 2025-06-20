@@ -12,6 +12,7 @@ import PartnersSection from './PartnersSection';
 import EnrollmentSection from './EnrollmentSection';
 import TestimonialsSection from './TestimonialsSection';
 import SupportSection from './SupportSection';
+import FooterCTA from '@/components/common/AdsCamp';
 
 const HomePage = () => {
   return (
@@ -31,6 +32,7 @@ const HomePage = () => {
         <TestimonialsSection />
         <SupportSection />
       </main>
+      <FooterCTA />
       
       <Footer />
     </div>

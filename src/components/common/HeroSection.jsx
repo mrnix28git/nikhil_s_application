@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-purple relative overflow-hidden">
+    <section className="bg-gradient-to-r from-[#fdc56c] to-[#f52d59] relative overflow-hidden">
       {/* Background Particles */}
       <img 
         src="/images/img_canvas_particlesjscanvasel.png" 

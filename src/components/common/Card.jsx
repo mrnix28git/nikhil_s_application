@@ -13,7 +13,7 @@ const Card = ({
 }) => {
   const cardVariants = {
     default: "bg-white border border-[#334155] rounded-tr-[15px] shadow-card",
-    gradient: "bg-gradient-purple-dark rounded-[25px] shadow-card text-white"
+    gradient: "bg-gradient-to-t from-[#fdc56c] to-[#f52d59] rounded-[25px] shadow-card text-white"
   };
 
   return (
