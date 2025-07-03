@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-purple text-white">
+    <footer className="bg-[#f52d59] text-white pb-10">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
@@ -44,7 +44,7 @@ const Footer = () => {
             <h3 className="text-gold text-2xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li><Link to="/privacy-policy" className="text-sm font-poppins hover:text-gold transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/term-of-use" className="text-sm font-poppins hover:text-gold transition-colors">Term of Use</Link></li>
+              <li><Link to="/terms-and-conditions" className="text-sm font-poppins hover:text-gold transition-colors">Term of Use</Link></li>
               <li><Link to="/contact-us" className="text-sm font-poppins hover:text-gold transition-colors">Contact Us</Link></li>
               <li><Link to="/about-us" className="text-sm font-poppins hover:text-gold transition-colors">About Us</Link></li>
               <li>
@@ -80,7 +80,7 @@ const Footer = () => {
               </Button>
             </form>
             
-            <div className="mt-8 flex flex-wrap gap-2">
+            {/* <div className="mt-8 flex flex-wrap gap-2">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-pink w-10 h-10 rounded-full flex items-center justify-center border border-purple hover:bg-pink-dark transition-colors">
                 <i className="text-white"></i>
               </a>
@@ -96,7 +96,7 @@ const Footer = () => {
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="bg-pink w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-dark transition-colors">
                 <i className="text-white"></i>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

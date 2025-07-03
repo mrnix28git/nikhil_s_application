@@ -25,23 +25,25 @@ const Header = () => {
           <Link to="/" className="text-white font-poppins text-base hover:text-black transition-colors">Home</Link>
           <Link to="/courses" className="text-white font-poppins text-base hover:text-black transition-colors">Courses</Link>
           <div className="relative group">
-            <Link to="/important-links" className="text-white font-poppins text-base hover:text-black transition-colors flex items-center">
+            {/* <Link to="/important-links" className="text-white font-poppins text-base hover:text-black transition-colors flex items-center">
               Important Links
               <svg className="w-2 h-2 ml-1" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.5 9L0 0H9L4.5 9Z" fill="white" />
               </svg>
-            </Link>
+            </Link> */}
           </div>
           <Link to="/blog" className="text-white font-poppins text-base hover:text-black transition-colors">Blog</Link>
-          <div className="relative group">
+          <Link to="/blog" className="text-white font-poppins text-base hover:text-black transition-colors">About Us</Link>
+          <Link to="/contact" className="text-white font-poppins text-base hover:text-black transition-colors">Contact Us</Link>
+          {/* <div className="relative group">
             <Link to="/payment" className="text-white font-poppins text-base hover:text-black transition-colors flex items-center">
               Payment
               <svg className="w-2 h-2 ml-1" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.5 9L0 0H9L4.5 9Z" fill="white" />
               </svg>
             </Link>
-          </div>
-          <Link to="/career" className="text-white font-poppins text-base hover:text-black transition-colors">Career</Link>
+          </div> */}
+          {/* <Link to="/career" className="text-white font-poppins text-base hover:text-black transition-colors">Career</Link> */}
         </nav>
 
         {/* Call Now Button */}
@@ -80,8 +82,8 @@ const Header = () => {
         </div>
       )}
 
-      
-    
+
+
     </header>
   );
 };

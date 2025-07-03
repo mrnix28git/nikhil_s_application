@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '../ui/Button';
 
-const Card = ({ 
-  title, 
-  description, 
-  icon, 
-  buttonText = "Learn More", 
+const Card = ({
+  title,
+  description,
+  icon,
+  buttonText = "Learn More",
   buttonAction,
   className = "",
   variant = "default"
 }) => {
   const cardVariants = {
-    default: "bg-white border border-[#334155] rounded-tr-[15px] shadow-card",
+    default: "bg-white border border-[#fdc56c] rounded-tr-[15px] shadow-card",
     gradient: "bg-gradient-to-t from-[#fdc56c] to-[#f52d59] rounded-[25px] shadow-card text-white"
   };
 
@@ -28,12 +28,16 @@ const Card = ({
             )}
           </div>
         )}
-        
-        <h3 className={`text-center md:text-left font-bold text-lg mb-4 ${variant === 'gradient' ? 'text-white' : 'text-purple'}`}>
+
+        <h3 className={`text-center md:text-left font-bold text-lg mb-4 ${
+          variant === 'gradient' ? 'text-white' : 'text-[#f52d59]'
+        }`}>
           {title}
         </h3>
-        
-        <div className={`text-xs leading-relaxed mb-6 ${variant === 'gradient' ? 'text-white' : 'text-black'}`}>
+
+        <div className={`text-xs leading-relaxed mb-6 ${
+          variant === 'gradient' ? 'text-white' : 'text-gray-700'
+        }`}>
           {typeof description === 'string' ? (
             <p className="text-center md:text-left">{description}</p>
           ) : (
@@ -41,12 +45,12 @@ const Card = ({
           )}
         </div>
       </div>
-      
+
       {buttonText && (
         <div className="mt-auto p-4">
           <Button
             variant={variant === 'gradient' ? 'outline' : 'gradient'}
-            className={`w-36 py-2 rounded-[10px] mx-auto block`}
+            className="w-36 py-2 rounded-[10px] mx-auto block"
             onClick={buttonAction}
           >
             {buttonText}

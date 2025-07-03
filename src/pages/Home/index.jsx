@@ -13,11 +13,12 @@ import EnrollmentSection from './EnrollmentSection';
 import TestimonialsSection from './TestimonialsSection';
 import SupportSection from './SupportSection';
 import FooterCTA from '@/components/common/AdsCamp';
+import PastPujasHighlights from './PastPujasHighlights';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+    
       
       <main className="flex-grow">
         <HeroSection />
@@ -29,12 +30,11 @@ const HomePage = () => {
         <PractitionerSection />
         <PartnersSection />
         <EnrollmentSection />
-        <TestimonialsSection />
-        <SupportSection />
+        <PastPujasHighlights />
+        {/* <TestimonialsSection />
+        <SupportSection /> */}
       </main>
-      <FooterCTA />
       
-      <Footer />
     </div>
   );
 };

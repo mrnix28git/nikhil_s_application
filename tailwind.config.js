@@ -4,16 +4,16 @@ module.exports = {
     extend: {
       colors: {
         purple: {
-          DEFAULT: '#6a0dad',
-          light: '#ad13ca',
-          dark: '#34243b',
-          medium: '#501a77'
+          DEFAULT: '#f52d59',        // updated to your red-pink
+          light: '#fdc56c',          // updated to your yellow-orange
+          dark: '#c01c3f',           // deeper tone of #f52d59
+          medium: '#e52c50'          // slightly deeper mid variant
         },
         pink: {
-          DEFAULT: '#cc2d74',
-          dark: '#c92872'
+          DEFAULT: '#fdc56c',        // updated to your orange-yellow
+          dark: '#e4b159'            // a darker tone of fdc56c
         },
-        gold: '#ffcc22',
+        gold: '#ffcc22',             // unchanged (still usable)
         black: {
           DEFAULT: '#000000',
           light: '#1e293b'
@@ -30,7 +30,7 @@ module.exports = {
       },
       boxShadow: {
         'custom': '0px 5px 5px rgba(66, 133, 244, 0.3)',
-        'card': '4px 5px 12px #6a0dad'
+        'card': '4px 5px 12px #f52d59' // updated to match new purple default
       }
     },
   },
