@@ -61,11 +61,11 @@ const CoursesSection = () => {
           <span className="text-black">Courses </span>
           <span className="text-purple">Offered</span>
         </h2>
-        
+
         <p className="text-center text-base mb-12 max-w-4xl mx-auto">
           We offer a wide range of occult science courses designed to deepen your understanding of ancient vedic wisdom. Explore our expertly crafted programs in:
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {courses.map(course => (
             <Card
@@ -73,13 +73,13 @@ const CoursesSection = () => {
               title={course.title}
               description={course.description}
               icon={course.icon}
-              buttonAction={() => window.location.href = `/courses/${course.id}`}
+              buttonAction={() => window.location.href = `/courses`}
             />
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
-          <Button 
+          <Button
             variant="primary"
             className="rounded-[10px] mx-auto"
             onClick={() => window.location.href = '/courses'}

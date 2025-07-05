@@ -15,12 +15,13 @@ import Footer from './components/common/Footer';
 import FooterCTA from './components/common/AdsCamp';
 import AllCourses from './pages/Courses/AllCourses';
 import CourseDetail from './pages/Courses/CourseDetail';
+import AstroCourseDetail from './pages/Courses/AstroCourseDetail';
 
 const AppRoutes = () => {
   return (
     <Router>
-      <Header/>
-      <ScrollToTop/>
+      <Header />
+      <ScrollToTop />
       <Routes>
 
         <Route path="/" element={<HomePage />} />
@@ -29,11 +30,11 @@ const AppRoutes = () => {
         <Route path="/blogs/:id" element={<BlogDetail />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/courses" element={<AllCourses/>} />
-  <Route path="/courses/:id" element={<CourseDetail />} />
+        <Route path="/courses" element={<AllCourses />} />
+        <Route path="/courses/:id" element={<AstroCourseDetail />} />
       </Routes>
-      <Footer/>
-      <FooterCTA/>
+      <Footer />
+      <FooterCTA />
     </Router>
   );
 };
